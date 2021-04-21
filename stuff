@@ -1,0 +1,45 @@
+name = "James"
+surname = "Bond"
+print(name,surname)
+print(name + " " + surname)
+whole_name = name + " " + surname
+print(whole_name)
+org = "MI6"
+email = name + "." + surname + "@" + org + ".uk"
+print(email)
+
+Age = 45
+#James is 45 years old.
+print(name + " is " + str(Age) + " years old.")
+
+dog = "Fido"
+dog_age = "6.5" #a string 
+dog_nextyear = float(dog_age) + 1
+print(dog_nextyear)
+
+name = "Juliette"
+surname = "Lewis"
+age = 45 
+pet = "dog"
+pet_name = "Floppy"
+pet_age = 9
+
+#James Bond is 45 years old and lives with his 3 yr old cat, Mr SNuggles.
+
+short_bio = f"{name} {surname} is {age} years old and lives with his {pet_age} year old {pet}, {pet_name}."
+print(short_bio)
+
+myname = 
+YOB = 
+where_I_live = 
+hobby1 = 
+hobby2 = 
+
+mybio = f"
+
+
+name = input("Type your first name. ")
+surname = input("Type your last name. ")
+
+age = input("What is your age? ")
+age = int(age)
