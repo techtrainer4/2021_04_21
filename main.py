@@ -1,47 +1,39 @@
-#user defined functions
-#What is the area of triangle
-b = 5
-h = 10
-A = b * h / 2 
+friends = ['Chelsea Moreno',
+ 'Jessica Ritter',
+ 'Jessica Wilson',
+ 'Christina Tucker',
+ 'Stanley Jackson',
+ 'Christine Stout',
+ 'Lori Roberts',
+ 'Monique Johnson',
+ 'Penny Kline',
+ 'Jennifer Johnson',
+ 'Bill Adams',
+ 'Brenda Rosario',
+ 'Kimberly Ray',
+ 'Thomas West',
+ 'Joy Shaw',
+ 'Robert Briggs',
+ 'Angela Morrison',
+ 'Peter Phillips',
+ 'David Torres',
+ 'Kathryn Barnes']
 
-def Area_of_Tri(base,height):
-  Area = base * height / 2 
-  return Area
-print(Area_of_Tri(10,12))
+print(friends)
+JPgroup = [] 
+for f in friends:
+  if f[0] in ["J","P","j","p"]:
+    JPgroup.append(f)
+  
+friend = "Joy Shaw"
+def name_splitter(friend):
+  for letter in friend:
+    if letter == " ":
+      space_index = friend.index(letter)
+      
+  return friend[:space_index], friend[space_index + 1:]
 
-def Gmail():
-  name = input("Type your first name ")
-  surname = input("Type your last name ")
-  address = f"{name}.{surname}@gmail.com"
-  return address
-
-print(Gmail())
-
-def Intro():
-  name = input("What is your name? ")
-  where = input("Where are you from?")
-  intro = f"My name is {name} and I am from {where}."
-  return intro 
-
-def area_circle(r): #pi = 3.14159
-  pi = 3.14159
-  A = pi * r ** 2 
-  return A 
-
-
-
-
-
-
-
-
-
+print(name_splitter("Charlie Brown"))
 
 
-
-
-
-
-
-
-
+    

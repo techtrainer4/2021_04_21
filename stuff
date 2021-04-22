@@ -43,3 +43,83 @@ surname = input("Type your last name. ")
 
 age = input("What is your age? ")
 age = int(age)
+
+#user defined functions
+#What is the area of triangle
+b = 5
+h = 10
+A = b * h / 2 
+
+def Area_of_Tri(base,height):
+  Area = base * height / 2 
+  return Area
+print(Area_of_Tri(10,12))
+
+def Gmail():
+  name = input("Type your first name ")
+  surname = input("Type your last name ")
+  address = f"{name}.{surname}@gmail.com"
+  return address
+
+print(Gmail())
+
+def Intro():
+  name = input("What is your name? ")
+  where = input("Where are you from?")
+  intro = f"My name is {name} and I am from {where}."
+  return intro 
+
+def area_circle(r): #pi = 3.14159
+  pi = 3.14159
+  A = pi * r ** 2 
+  return A 
+colleagues[0] = "Charlie Brown"
+print(colleagues)
+colleagues[0:2] = ["John Lennon","Paul McCartney"]
+print(colleagues)
+colleagues[-2:] = ["George Harrison","Ringo Starr"]
+print(colleagues)
+
+nums = [1,2,3]
+#For Loop 
+for x in nums: 
+  print(x * 2)
+
+nums_x2 = []
+for pizzas in nums:
+  D = pizzas * 2
+  nums_x2.append(D) 
+
+print(nums_x2)
+print(nums)
+
+nums_x3 = [3*w for w in nums] #one line!!
+print(nums_x3)
+
+#conditionals 
+#if-else statements
+age = 100
+if age >= 21:
+  print("You can purchase alcohol.")
+elif age >= 18:
+  print("You can vote.")
+else:
+  print("You cannot vote or purchase alcohol.")
+
+pizza = input("Do you like pizza? Y/N")
+if pizza == "Y":
+  print("I like pizza too.")
+else:
+  print("Why not?")
+
+nums = [1,2,3,4,5,6,7,8]
+magic_num = 5
+
+for X in nums:
+  if X == magic_num:
+    print("That's the MAGIC NUMBER!!!!")
+    break
+  else:
+    print("That's not it :(")
+
+print(coll)
